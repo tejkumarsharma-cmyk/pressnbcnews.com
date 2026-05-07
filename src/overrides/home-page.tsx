@@ -42,20 +42,20 @@ export async function HomePageOverride() {
     {
       quote:
         'PressNBCNews helped us announce our product launch with a clean release page and measurable pickup in under 24 hours.',
-      name: 'Alicia Brown',
-      role: 'Head of Communications, Nexora Labs',
+      name: 'Sarah Mitchell',
+      role: 'Head of Communications, Vantage Tech',
     },
     {
       quote:
         'The platform feels like a real SaaS product, not a basic blog template. Our team can publish and iterate quickly.',
-      name: 'Rahul Menon',
-      role: 'PR Manager, Cloudframe',
+      name: 'James Okafor',
+      role: 'PR Manager, Meridian Group',
     },
     {
       quote:
         'We run multiple client campaigns and the release workflow, search visibility, and analytics are exactly what we needed.',
-      name: 'Diana Foster',
-      role: 'Agency Director, Brightline Media',
+      name: 'Laura Chen',
+      role: 'Agency Director, Clearline Media',
     },
   ]
   const faqItems = [
@@ -73,7 +73,7 @@ export async function HomePageOverride() {
           <div className="grid gap-7 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div className="fade-up">
               <p className="press-badge inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]">
-                Media press release service
+                Media press media service
               </p>
               <h1 className="mt-5 text-4xl font-black leading-[1.05] tracking-[-0.02em] sm:text-5xl">
                 Amplify every announcement with
@@ -83,10 +83,6 @@ export async function HomePageOverride() {
                 Publish newsroom-quality releases, improve media visibility, and monitor performance from a single SaaS workflow built for campaigns.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="/pricing" className="inline-flex items-center gap-2 rounded-full bg-[linear-gradient(120deg,#EB5B00,#D91656)] px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(217,22,86,0.24)] transition hover:-translate-y-0.5">
-                  Compare Plans
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
                 <Link href="/updates" className="inline-flex items-center rounded-full border border-[#e7c5d8] bg-white px-6 py-3 text-sm font-semibold text-[#640D5F] transition hover:bg-[#fff5fb]">
                   Latest News
                 </Link>
@@ -167,7 +163,7 @@ export async function HomePageOverride() {
             <div className="rounded-[1.8rem] border border-[#efcfc0] bg-white p-6 shadow-[0_14px_34px_rgba(100,13,95,0.08)] lg:p-8">
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a5685]">About PressNBCNews</p>
               <h2 className="mt-2 text-3xl font-black tracking-[-0.02em] text-[#38193c]">
-                A focused platform for media press release publishing
+                A focused platform for media press media publishing
               </h2>
               <p className="mt-4 text-sm leading-7 text-[#6d4f71]">
                 We help brands and agencies publish announcement content with stronger structure, better readability, and distribution-ready presentation.
@@ -205,7 +201,7 @@ export async function HomePageOverride() {
           <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a5685]">Latest news</p>
-              <h2 className="mt-2 text-3xl font-black tracking-[-0.02em] text-[#38193c]">Recent press releases</h2>
+              <h2 className="mt-2 text-3xl font-black tracking-[-0.02em] text-[#38193c]">Recent press media</h2>
             </div>
             <Link href="/updates" className="inline-flex items-center gap-2 text-sm font-semibold text-[#d91656] hover:text-[#640d5f]">
               View all releases
@@ -223,7 +219,6 @@ export async function HomePageOverride() {
                   </span>
                 </div>
                 <div className="p-4">
-                  <p className="text-xs text-[#9f6c96]">{new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
                   <h3 className="mt-2 line-clamp-3 text-base font-semibold leading-6 text-[#3e1f41]">{post.title}</h3>
                   <p className="mt-2 line-clamp-2 text-sm text-[#6f5370]">{excerpt(post.summary)}</p>
                   <span className="mt-3 inline-flex text-sm font-semibold text-[#d91656]">
@@ -249,9 +244,6 @@ export async function HomePageOverride() {
                   <Link href={postHref(featured)} className="inline-flex items-center gap-2 rounded-full bg-[#640D5F] px-5 py-2.5 text-sm font-semibold text-white">
                     Read full release
                     <ArrowRight className="h-4 w-4" />
-                  </Link>
-                  <Link href="/pricing" className="inline-flex rounded-full border border-[#e6cad9] px-5 py-2.5 text-sm font-semibold text-[#640D5F]">
-                    Distribution plans
                   </Link>
                 </div>
               </div>

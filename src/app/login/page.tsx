@@ -59,7 +59,7 @@ export default function LoginPage() {
             <div className="mt-6 rounded-xl border border-[#efd6e8] bg-[#fff8ec] px-4 py-3 text-sm text-[#5f3c60]">
               <span className="inline-flex items-center gap-2 font-medium">
                 <BarChart3 className="h-4 w-4 text-[#eb5b00]" />
-                Secure sign-in for your press release analytics dashboard.
+                Secure sign-in for your press media analytics dashboard.
               </span>
             </div>
           </div>

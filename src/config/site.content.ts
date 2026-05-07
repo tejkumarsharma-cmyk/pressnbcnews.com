@@ -9,7 +9,7 @@ export const siteContent = {
   },
   hero: {
     badge: 'Press distribution',
-    title: ['Publish, distribute, and track press releases that get noticed.'],
+    title: ['Publish, distribute, and track press media that get noticed.'],
     description:
       'PressNBCNews helps teams publish editorial-quality releases, place stories across media channels, and monitor campaign visibility from one workflow.',
     primaryCta: {
@@ -29,13 +29,13 @@ export const siteContent = {
   },
   home: {
     metadata: {
-      title: 'Press release distribution and media newsroom',
+      title: 'Press media distribution and media newsroom',
       description:
-        'Explore the latest press releases, media announcements, and business updates published on PressNBCNews.',
-      openGraphTitle: 'Press release distribution and media newsroom',
+        'Explore the latest press media, media announcements, and business updates published on PressNBCNews.',
+      openGraphTitle: 'Press media distribution and media newsroom',
       openGraphDescription:
-        'A modern media publishing experience for announcements, company updates, and distributed press releases.',
-      keywords: ['press release distribution', 'latest news', 'business announcements', 'media outreach'],
+        'A modern media publishing experience for announcements, company updates, and distributed press media.',
+      keywords: ['press media distribution', 'latest news', 'business announcements', 'media outreach'],
     },
     introBadge: 'Platform',
     introTitle: 'A media-first workflow for publishing and distribution.',
@@ -62,7 +62,7 @@ export const siteContent = {
   },
   cta: {
     badge: 'Start now',
-    title: 'Choose a press release plan that matches your distribution goals.',
+    title: 'Choose a press media plan that matches your distribution goals.',
     description:
       'From startup announcements to enterprise campaigns, our platform supports publication, distribution, and reporting in one place.',
     primaryCta: {
@@ -74,7 +74,7 @@ export const siteContent = {
       href: '/updates',
     },
   },
-  taskSectionHeading: 'Latest press releases',
+  taskSectionHeading: 'Latest press media',
   taskSectionDescriptionSuffix: 'Read the newest stories from the media desk.',
 } as const
 
@@ -109,7 +109,7 @@ export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'soci
   },
   mediaDistribution: {
     title: 'Latest news',
-    description: 'Read recent press releases, product launches, and media updates.',
+    description: 'Read recent press media, product launches, and media updates.',
   },
 }
 
@@ -130,7 +130,7 @@ export const taskIntroCopy: Record<
   mediaDistribution: {
     title: 'Latest news',
     paragraphs: [
-      'Browse fresh press releases, campaign announcements, and editorial updates from companies and communication teams.',
+      'Browse fresh press media, campaign announcements, and editorial updates from companies and communication teams.',
       'Use category, date, and keyword filters to scan the archive quickly and open any release in a full editorial view.',
     ],
     links: [

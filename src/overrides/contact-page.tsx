@@ -1,6 +1,6 @@
 import { NavbarShell } from '@/components/shared/navbar-shell'
 import { Footer } from '@/components/shared/footer'
-import { Clock3, MapPin, Phone } from 'lucide-react'
+
 
 export const CONTACT_PAGE_OVERRIDE_ENABLED = true
 
@@ -35,36 +35,6 @@ export function ContactPageOverride() {
           </form>
 
           <div className="space-y-4">
-            <div className="press-panel rounded-2xl p-5">
-              <h2 className="text-lg font-bold text-[#422046]">Contact Information</h2>
-              <div className="mt-4 space-y-4 text-sm text-[#5f3c60]">
-                <div className="flex items-start gap-3">
-                  <Phone className="mt-0.5 h-4 w-4 text-[#eb5b00]" />
-                  <div>
-                    <p className="font-semibold text-[#422046]">Telephone</p>
-                    <p>+1 888 880 9539</p>
-                    <p>+1 646 417 2894</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Clock3 className="mt-0.5 h-4 w-4 text-[#eb5b00]" />
-                  <div>
-                    <p className="font-semibold text-[#422046]">Business Hours</p>
-                    <p>Monday to Friday</p>
-                    <p>8:30am to 5:00pm Pacific (PDT)</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <MapPin className="mt-0.5 h-4 w-4 text-[#eb5b00]" />
-                  <div>
-                    <p className="font-semibold text-[#422046]">US Address</p>
-                    <p>Suite 1400 - 505 Second Avenue</p>
-                    <p>Seattle, WA 98104</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="rounded-2xl bg-[linear-gradient(120deg,#0b5aa0,#0677c7)] p-6 text-white">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#bce3ff]">Need quick answers?</p>
               <h3 className="mt-2 text-2xl font-black">Check out our FAQs</h3>
