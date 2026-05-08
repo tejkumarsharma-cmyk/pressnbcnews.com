@@ -14,7 +14,7 @@ function getRegisterTheme() {
     formMuted: 'text-[#6d4f71]',
     action:
       'bg-[linear-gradient(120deg,#EB5B00,#D91656)] text-white hover:brightness-105 shadow-[0_12px_28px_rgba(217,22,86,0.24)]',
-    title: 'Create your press release account',
+    title: 'Create your press media account',
     body: 'Set up your workspace to publish releases, manage campaigns, and grow media reach.',
   }
 }

@@ -43,7 +43,7 @@ export default function AboutPage() {
             About us
           </p>
           <h1 className="mt-4 text-4xl font-black tracking-[-0.02em] text-[#3d1d42] sm:text-5xl">
-            Built for media press release teams
+            Built for media press media teams
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-sm leading-7 text-[#6d4f71]">
             PressNBCNews is a media-focused SaaS platform that helps organizations publish better releases, improve reach, and keep newsroom archives discoverable.

@@ -14,7 +14,6 @@ export function NavbarOverride() {
   const navLinks = [
     { label: 'Home', href: '/' },
     { label: primaryTask?.label || 'Latest News', href: primaryTask?.route || '/updates' },
-    { label: 'Pricing', href: '/pricing' },
     { label: 'About Us', href: '/about' },
     { label: 'Contact', href: '/contact' },
   ]
@@ -55,7 +54,7 @@ export function NavbarOverride() {
               <span className="sr-only">Search</span>
             </Link>
             <Link href="/register" className="rounded-full bg-[linear-gradient(120deg,#EB5B00,#D91656)] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(217,22,86,0.26)] transition hover:-translate-y-0.5">
-              Submit Press Release
+              Submit Press Media
             </Link>
           </div>
 
