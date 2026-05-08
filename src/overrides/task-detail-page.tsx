@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { CalendarDays, Facebook, Linkedin, Share2, Twitter, UserCircle2 } from 'lucide-react'
+import { Facebook, Linkedin, Share2, Twitter, UserCircle2 } from 'lucide-react'
 import { NavbarShell } from '@/components/shared/navbar-shell'
 import { Footer } from '@/components/shared/footer'
 import { fetchTaskPostBySlug, fetchTaskPosts } from '@/lib/task-data'
@@ -22,7 +22,7 @@ export async function TaskDetailPageOverride({ task, slug }: { task: TaskKey; sl
     (typeof content.logo === 'string' ? content.logo : null) ||
     'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1300&q=80'
 
-  const subtitle = post.summary || (typeof content.excerpt === 'string' ? content.excerpt : '') || 'Press release update'
+  const subtitle = post.summary || (typeof content.excerpt === 'string' ? content.excerpt : '') || 'Press media update'
   const author = post.authorName || 'Editorial Desk'
   const taskRoute = SITE_CONFIG.tasks.find((item) => item.key === task)?.route || `/${task}`
   const articleUrl = `${SITE_CONFIG.baseUrl.replace(/\/$/, '')}${taskRoute}/${post.slug}`
@@ -58,10 +58,6 @@ export async function TaskDetailPageOverride({ task, slug }: { task: TaskKey; sl
             <span className="inline-flex items-center gap-2">
               <UserCircle2 className="h-4 w-4" />
               {author}
-            </span>
-            <span className="inline-flex items-center gap-2">
-              <CalendarDays className="h-4 w-4" />
-              {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </span>
           </div>
         </section>
@@ -101,8 +97,7 @@ export async function TaskDetailPageOverride({ task, slug }: { task: TaskKey; sl
             <div className="press-panel rounded-2xl p-5">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8f5e8c]">Article details</p>
               <div className="mt-3 space-y-2 text-sm text-[#5f3c60]">
-                <p>Category: {String((post.content as any)?.category || 'Press Release')}</p>
-                <p>Published: {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US')}</p>
+                <p>Category: {String((post.content as any)?.category || 'Press Media')}</p>
                 <p>Author: {author}</p>
               </div>
             </div>

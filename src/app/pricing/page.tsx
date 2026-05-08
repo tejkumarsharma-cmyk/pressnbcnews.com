@@ -8,7 +8,7 @@ import { buildPageMetadata } from '@/lib/seo'
 export const metadata: Metadata = buildPageMetadata({
   path: '/pricing',
   title: 'Pricing',
-  description: 'Choose a press release distribution plan for your campaign size and media reach goals.',
+  description: 'Choose a press media distribution plan for your campaign size and media reach goals.',
 })
 
 const plans = [
@@ -18,7 +18,7 @@ const plans = [
     description: 'Best for startups sharing occasional product updates.',
     cta: 'Start Basic',
     featured: false,
-    points: ['1 press release / month', 'Core distribution', 'Standard analytics', 'Email support'],
+    points: ['1 press media / month', 'Core distribution', 'Standard analytics', 'Email support'],
   },
   {
     name: 'Pro',
@@ -26,7 +26,7 @@ const plans = [
     description: 'Built for growing teams running frequent campaigns.',
     cta: 'Choose Pro',
     featured: true,
-    points: ['4 press releases / month', 'Priority distribution', 'Advanced analytics', 'Media pickup reports'],
+    points: ['4 press media / month', 'Priority distribution', 'Advanced analytics', 'Media pickup reports'],
   },
   {
     name: 'Premium',

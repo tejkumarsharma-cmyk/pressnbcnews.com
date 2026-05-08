@@ -18,7 +18,7 @@ export function FooterOverride() {
               </span>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#640D5F]">pressnbcnews.com</p>
-                <p className="text-xs text-[#8a5a81]">Media press release platform</p>
+                <p className="text-xs text-[#8a5a81]">Media press media platform</p>
               </div>
             </div>
             <p className="mt-5 max-w-md text-sm leading-7 text-[#5f3c60]">
@@ -38,7 +38,6 @@ export function FooterOverride() {
             <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#640D5F]">Company</h3>
             <div className="mt-4 space-y-3 text-sm text-[#5f3c60]">
               <Link href="/about" className="block hover:text-[#d91656]">About Us</Link>
-              <Link href="/pricing" className="block hover:text-[#d91656]">Pricing</Link>
               <Link href="/contact" className="block hover:text-[#d91656]">Contact</Link>
               <Link href="/updates" className="block hover:text-[#d91656]">Latest News</Link>
             </div>
@@ -57,7 +56,7 @@ export function FooterOverride() {
 
         <div className="mt-10 flex flex-col gap-3 border-t border-[#f0c8b6] pt-6 text-xs text-[#7b5778] sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; {year} {SITE_CONFIG.name}. All rights reserved.</p>
-          <p>Built for media publishing and press release distribution.</p>
+          <p>Built for media publishing and press media distribution.</p>
         </div>
       </div>
     </footer>

@@ -79,7 +79,7 @@ export async function TaskListPageOverride({
       <NavbarShell />
       <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <section className="press-panel rounded-[2rem] p-6 lg:p-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a5685]">News / Press Release Listing</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a5685]">News / Press Media Listing</p>
           <h1 className="mt-2 text-4xl font-black tracking-[-0.02em] text-[#3d1d42]">{taskLabel}</h1>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-[#6d4f71]">
             Search by keyword, filter by category, and narrow by date range to discover announcements faster.
@@ -144,13 +144,11 @@ export async function TaskListPageOverride({
                       </div>
                       <div className="p-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#9b6c98]">
-                          {String((post.content as any)?.category || 'Press Release')}
+                          {String((post.content as any)?.category || 'Press Media')}
                         </p>
                         <h2 className="mt-2 line-clamp-3 text-lg font-semibold leading-6 text-[#3b1d41]">{post.title}</h2>
                         <p className="mt-2 line-clamp-2 text-sm text-[#6d4f71]">{excerpt(post.summary)}</p>
-                        <p className="mt-3 text-xs text-[#a1799f]">
-                          {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-                        </p>
+
                       </div>
                     </Link>
                   </article>
@@ -158,7 +156,7 @@ export async function TaskListPageOverride({
               </div>
             ) : (
               <div className="rounded-2xl border border-dashed border-[#dfbdd0] bg-white p-10 text-center text-[#7b5778]">
-                No matching press releases found for your selected filters.
+                No matching press media found for your selected filters.
               </div>
             )}
           </div>
@@ -167,9 +165,6 @@ export async function TaskListPageOverride({
             <div className="press-panel rounded-2xl p-5">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8f5e8c]">Quick Links</p>
               <div className="mt-3 space-y-2">
-                <Link href="/pricing" className="block rounded-xl border border-[#ecd3e6] bg-white px-3 py-2 text-sm font-medium text-[#5a305f]">
-                  View pricing plans
-                </Link>
                 <Link href="/contact" className="block rounded-xl border border-[#ecd3e6] bg-white px-3 py-2 text-sm font-medium text-[#5a305f]">
                   Contact editorial team
                 </Link>
